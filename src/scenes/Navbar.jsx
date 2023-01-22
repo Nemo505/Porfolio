@@ -52,8 +52,39 @@ const Navbar = ({selectedPage, setSelectedPage}) => {
                 <button className="rounded-full bg-red-300"
                     onClick={() => setIsMenuToggled(!isMenuToggled)}
                 >
-                    <img src="../assets/maki.jpg" alt="menu-icon" />
+                    <img src={"../assets/maki.jpg"} alt="menu-icon" />
                 </button>
+            )}
+            {!aboveSmallScreens && isMenuToggled && (
+                <div className="fixed right-0 bottom-0 h-full bg-blue-400 w-[300px]">
+                    <div className="flex justify-end p-12">
+                        <button onClick={() => setIsMenuToggled(!isMenuToggled)}> 
+                            <img src={"../assets/maki.jpg"} alt="menu-icon" />
+                        </button>
+                    </div>
+                    <div className="flex flex-col gap-10 ml-[22%] text-2xl text-red-400">
+                        <Link page="Home"
+                            selectedPage={selectedPage}
+                            setSelectedPage={selectedPage}
+                        />
+                        <Link page="Skills"
+                            selectedPage={selectedPage}
+                            setSelectedPage={selectedPage}
+                        />
+                        <Link page="Projects"
+                            selectedPage={selectedPage}
+                            setSelectedPage={selectedPage}
+                        />
+                        <Link page="Testimonials"
+                            selectedPage={selectedPage}
+                            setSelectedPage={selectedPage}
+                        />
+                        <Link page="Contact"
+                            selectedPage={selectedPage}
+                            setSelectedPage={selectedPage}
+                        />
+                    </div>
+                </div>
             )}
         </div>
     </nav>
