@@ -18,34 +18,36 @@ const Link = ({ page, selectedPage, setSelectedPage}) => {
     )
 }
 
-const Navbar = ({selectedPage, setSelectedPage}) => {
+const Navbar = ({isTopPage, selectedPage, setSelectedPage}) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const aboveSmallScreens = useMediaQuery("(min-width: 768px)");
+    const navbarBackground = isTopPage ? "" : "bg-red-400";
+
   return (
-    <nav className={"z-40 w-full fixed top-0 py-6"}>
+    <nav className={` ${navbarBackground} z-40 w-full fixed top-0 py-6`}>
         <div className={"flex items-center justify-between mx-auto w-5/6"}>
             <h4 className="font-playfair text-3xl font-bold">JE</h4>
             {aboveSmallScreens ? (
                 <div className="flex justify-between gap-16 font-mono">
                     <Link page="Home"
                         selectedPage={selectedPage}
-                        setSelectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
                     />
                     <Link page="Skills"
                         selectedPage={selectedPage}
-                        setSelectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
                     />
                     <Link page="Projects"
                         selectedPage={selectedPage}
-                        setSelectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
                     />
                     <Link page="Testimonials"
                         selectedPage={selectedPage}
-                        setSelectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
                     />
                     <Link page="Contact"
                         selectedPage={selectedPage}
-                        setSelectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
                     />
                 </div>
             ) : (
@@ -65,23 +67,23 @@ const Navbar = ({selectedPage, setSelectedPage}) => {
                     <div className="flex flex-col gap-10 ml-[22%] text-2xl text-red-400">
                         <Link page="Home"
                             selectedPage={selectedPage}
-                            setSelectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
                         />
                         <Link page="Skills"
                             selectedPage={selectedPage}
-                            setSelectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
                         />
                         <Link page="Projects"
                             selectedPage={selectedPage}
-                            setSelectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
                         />
                         <Link page="Testimonials"
                             selectedPage={selectedPage}
-                            setSelectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
                         />
                         <Link page="Contact"
                             selectedPage={selectedPage}
-                            setSelectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
                         />
                     </div>
                 </div>

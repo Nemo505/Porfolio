@@ -1,7 +1,7 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Navbar from "./scenes/Navbar";
 import useMediaQuery from "./hooks/useMediaQuery";
-import { useEffect } from "react";
+import DotGroup from "./scenes/DotGroup";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -15,9 +15,10 @@ function App() {
       }else{
         setIsTopPage(false);
       }
-      window.addEventListener("scroll",)
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);  
     }
-  })
+  }, []);
 
   return (
     <div className="app bg-purple">
@@ -26,6 +27,14 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
+      <div className="w-5/6 mx-auto md:h-full">
+        {aboveMediumScreens && (
+          <DotGroup 
+          selectedPage={selectedPage}
+          setSelectedPage={setSelectedPage}
+          />
+        )}
+      </div>
     </div>
   )
 }
