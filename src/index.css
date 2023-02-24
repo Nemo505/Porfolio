@@ -9,6 +9,6 @@ body,
 #root,
 .app {
     height: 100%;
-    background-color: #101c36;
+    background-image: url("../src/assets/universe_three.jpg");
     @apply text-yellow-100
 }
