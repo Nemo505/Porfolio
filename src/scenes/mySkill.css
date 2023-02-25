@@ -1,0 +1,10 @@
+circle{
+   animation: anim 2s linear forwards; 
+   stroke: url(#GradientColor);
+}
+@keyframes anim {
+    100%{
+        stroke-dashoffset: 200;
+        stroke-dasharray:472;
+    }
+}
