@@ -59,10 +59,10 @@ const Navbar = ({isTopPage, selectedPage, setSelectedPage}) => {
                 </button>
             )}
             {!aboveSmallScreens && isMenuToggled && (
-                <div className="fixed right-0 bottom-0 h-full bg-blue-400 w-[300px]">
+                <div className="fixed right-0 bottom-0 h-full bg-fuchsia-600 w-[300px]">
                     <div className="flex justify-end p-12">
                         <button onClick={() => setIsMenuToggled(!isMenuToggled)}> 
-                            <img src={"../assets/maki.jpg"} alt="menu-icon" />
+                            <img src={"../../src/assets/maki.png"} alt="menu-icon" />
                         </button>
                     </div>
                     <div className="flex flex-col gap-10 ml-[22%] text-2xl text-red-400">

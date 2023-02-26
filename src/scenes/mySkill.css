@@ -1,10 +1,44 @@
 circle{
-   animation: anim 2s linear forwards; 
-   stroke: url(#GradientColor);
+    stroke: url(#GradientColor);
 }
-@keyframes anim {
+
+.php{
+    animation: php 2s linear forwards; 
+}
+
+.react{
+    animation: react 2s linear forwards; 
+}
+
+.api{
+    animation: api 2s linear forwards; 
+}
+
+.mySql{
+    animation: mySql 2s linear forwards; 
+}
+
+@keyframes php {
     100%{
-        stroke-dashoffset: 200;
+        stroke-dashoffset: 150;
+        stroke-dasharray:472;
+    }
+}
+@keyframes react {
+    100%{
+        stroke-dashoffset: 250;
+        stroke-dasharray:472;
+    }
+}
+@keyframes api {
+    100%{
+        stroke-dashoffset: 300;
+        stroke-dasharray:472;
+    }
+}
+@keyframes mySql {
+    100%{
+        stroke-dashoffset: 100;
         stroke-dasharray:472;
     }
 }
