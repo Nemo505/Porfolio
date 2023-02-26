@@ -5,6 +5,7 @@ import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills"
 import Projects from "./scenes/Projects"
+import Footer from "./scenes/Footer"
 import LineGradient from "./components/LineGradient"
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
           <Projects />
         </div>
 
+        <Footer/>
     </div>
   )
 }
