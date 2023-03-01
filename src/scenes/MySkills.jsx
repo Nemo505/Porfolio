@@ -66,7 +66,7 @@ const MySkills = () => {
                         </div>
 
                         <div className='relative items-center justify-center'>
-                            <svg>
+                            <svg >
                                 <defs>
                                     <linearGradient id="GradientColor">
                                     <stop offset="0%" stopColor="#e91e63" />
@@ -100,66 +100,66 @@ const MySkills = () => {
                     </div>
                 ): (
                     <div className='absoute items-center pt-16'>
-                        <div className='relative items-center'>
-                            <svg>
+                        <div className='relative items-center mx-auto'>
+                            <svg className='mx-auto'>
                                 <defs>
                                     <linearGradient id="GradientColor">
                                     <stop offset="0%" stopColor="#EBB2D6" />
                                     <stop offset="100%" stopColor="#141852" />
                                     </linearGradient>
                                 </defs>
-                                <circle cx="160" cy="70" r="60" strokeWidth={7} 
+                                <circle cx="50%" cy="50%" r="60" strokeWidth={7} 
                                     stopOpacity="transparent" strokeDasharray={0} 
                                     ></circle>
-                                <text x="53%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">80%</text>
+                                <text x="50%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">80%</text>
                             </svg>
                             <div className='font-playfait font-semibold text-center'>JAVASCRIPT, HTML, CSS</div>
                         </div>
 
-                        <div className='relative items-center justify-center'>
-                            <svg>
+                        <div className='relative items-center justify-center mx-auto'>
+                            <svg className='mx-auto'>
                                 <defs>
                                     <linearGradient id="GradientColor">
                                     <stop offset="0%" stopColor="#e91e63" />
                                     <stop offset="100%" stopColor="#673ab7" />
                                     </linearGradient>
                                 </defs>
-                                <circle cx="160" cy="70" r="60" strokeWidth={7} 
+                                <circle cx="50%" cy="50%" r="60" strokeWidth={7} 
                                     stopOpacity="transparent" strokeDasharray={0} 
                                     ></circle>
-                                <text x="53%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">70%</text>
+                                <text x="50%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">70%</text>
                             </svg>
                             <div className='font-playfait font-semibold text-center'>Front-End(React)</div>
                         </div>
 
                         <div className='relative items-center justify-center'>
-                            <svg>
+                            <svg className='mx-auto'>
                                 <defs>
                                     <linearGradient id="GradientColor">
                                     <stop offset="0%" stopColor="#e91e63" />
                                     <stop offset="100%" stopColor="#673ab7" />
                                     </linearGradient>
                                 </defs>
-                                <circle cx="160" cy="70" r="60" strokeWidth={7} 
+                                <circle cx="50%" cy="50%" r="60" strokeWidth={7} 
                                     stopOpacity="transparent" strokeDasharray={0} 
                                     ></circle>
-                                <text x="53%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">85%</text>
+                                <text x="50%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">85%</text>
                             </svg>
                             <div className='font-playfait font-semibold text-center'>PHP (LARAVEL)</div>
                         </div>
 
                         <div className='relative items-center justify-center'>
-                            <svg>
+                            <svg className='mx-auto'>
                                 <defs>
                                     <linearGradient id="GradientColor">
                                     <stop offset="0%" stopColor="#e91e63" />
                                     <stop offset="100%" stopColor="#673ab7" />
                                     </linearGradient>
                                 </defs>
-                                <circle cx="160" cy="70" r="60" strokeWidth={7} 
+                                <circle cx="50%" cy="50%" r="60" strokeWidth={7} 
                                     stopOpacity="transparent" strokeDasharray={0} 
                                     ></circle>
-                                <text x="53%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">60%</text>
+                                <text x="50%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">60%</text>
                             </svg>
                             <div className='font-playfait font-semibold text-center'>MySQL, MangoDB</div>
                         </div>
