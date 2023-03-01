@@ -52,8 +52,8 @@ const Landing = ({setSelectedPage}) => {
                         Naing
                     </span> 
                 </p>
-                <p className='mt-10 mb-7 text-sm text-center md:text-start'>
-                    I am harding working person with considerate personality
+                <p className='mt-10 mb-7 text-sm text-center md:text-start leading-loose'>
+                    I am Web Developer based in Myanmar. Designing websites are what I've been doing already for two years in work and in my free time from seniors and self-taught lessons.I custom-coded a variety of websites, ranging from simple e-shops to complex platforms with a variety of functions.
                 </p>
 
             </motion.div>

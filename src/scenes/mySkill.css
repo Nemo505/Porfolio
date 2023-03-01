@@ -26,19 +26,19 @@ circle{
 }
 @keyframes react {
     100%{
-        stroke-dashoffset: 250;
+        stroke-dashoffset: 200;
         stroke-dasharray:472;
     }
 }
 @keyframes api {
     100%{
-        stroke-dashoffset: 300;
+        stroke-dashoffset: 130;
         stroke-dasharray:472;
     }
 }
 @keyframes mySql {
     100%{
-        stroke-dashoffset: 100;
+        stroke-dashoffset: 250;
         stroke-dasharray:472;
     }
 }
