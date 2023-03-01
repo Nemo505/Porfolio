@@ -22,7 +22,7 @@ const MySkills = () => {
                     My Skills
                 </p>
                 <LineGradient width='w-1/3 mx-auto'/>
-                <p className='mt-10 mb-7 w-2/3 px-4 text-center leading-loose'>
+                <p className='mt-10 mb-7 text-center leading-loose'>
                     Develop PHP projects in Laravel Framework using Ajax, Jquery, JavaScripts with APIs for mobile with JWT authentication.
                     Use MySQL Database with xampp and Laragon Environment for dynamic data-driven.
                     Woking React projects with Material UI, Bootstrap, Tailwind CSS, React-Router.
