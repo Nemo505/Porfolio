@@ -652,6 +652,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -932,6 +936,11 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pr-0\.5{
@@ -1260,6 +1269,11 @@ body,
 
   .md\:m-12{
     margin: 3rem;
+  }
+
+  .md\:mx-20{
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .md\:ml-20{
