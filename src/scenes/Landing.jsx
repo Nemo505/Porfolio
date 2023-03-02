@@ -18,15 +18,15 @@ const Landing = ({setSelectedPage}) => {
                 // </div>
                 <div className='relative z-0 
                 '>
-                    <img src="../../src/assets/maki.png" 
+                    <img src="./assets/maki.png" 
                         className='hover:filter py-16 ml-28 hover:saturate-200 transition duration-500 z-10 w-3/5 absolute
                         max-w-[400px] md:max-w-[600px]' alt="profile" />
-                    <img src="../../src/assets/butterfly.png" 
+                    <img src="./assets/butterfly.png" 
                         className='hover:filter hover:saturate-200 transition duration-500 z-0 w-full
                         max-w-[400px] md:max-w-[600px]' alt="profile" />
                 </div>
                 ): (
-                    <img src="../../src/assets/maki.png" 
+                    <img src="./assets/maki.png" 
                     className='hover:filter hover:saturate-200 transition duration-500 z-10 w-full
                     max-w-[400px] md:max-w-[600px]' alt="profile" />
                 )

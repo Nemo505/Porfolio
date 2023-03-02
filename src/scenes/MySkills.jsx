@@ -41,7 +41,7 @@ const MySkills = () => {
                                     <stop offset="100%" stopColor="#141852" />
                                     </linearGradient>
                                 </defs>
-                                <circle className='php' cx="150" cy="70" r="60" strokeWidth={7} 
+                                <circle className='html' cx="150" cy="70" r="60" strokeWidth={7} 
                                     stopOpacity="transparent" strokeDasharray={0} 
                                     ></circle>
                                 <text x="50%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">80%</text>
@@ -108,7 +108,7 @@ const MySkills = () => {
                                     <stop offset="100%" stopColor="#141852" />
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50%" cy="50%" r="60" strokeWidth={7} 
+                                <circle cx="50%" cy="50%" r="60" className='html' strokeWidth={7} 
                                     stopOpacity="transparent" strokeDasharray={0} 
                                     ></circle>
                                 <text x="50%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">80%</text>
@@ -124,7 +124,7 @@ const MySkills = () => {
                                     <stop offset="100%" stopColor="#673ab7" />
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50%" cy="50%" r="60" strokeWidth={7} 
+                                <circle cx="50%" cy="50%" className='react' r="60" strokeWidth={7} 
                                     stopOpacity="transparent" strokeDasharray={0} 
                                     ></circle>
                                 <text x="50%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">70%</text>
@@ -140,7 +140,7 @@ const MySkills = () => {
                                     <stop offset="100%" stopColor="#673ab7" />
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50%" cy="50%" r="60" strokeWidth={7} 
+                                <circle cx="50%" cy="50%" className='api' r="60" strokeWidth={7} 
                                     stopOpacity="transparent" strokeDasharray={0} 
                                     ></circle>
                                 <text x="50%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">85%</text>
@@ -156,7 +156,7 @@ const MySkills = () => {
                                     <stop offset="100%" stopColor="#673ab7" />
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50%" cy="50%" r="60" strokeWidth={7} 
+                                <circle cx="50%" cy="50%" r="60" className='mySql' strokeWidth={7} 
                                     stopOpacity="transparent" strokeDasharray={0} 
                                     ></circle>
                                 <text x="50%" y="50%" textAnchor="middle" stroke="#fff" strokeWidth="1px">60%</text>
