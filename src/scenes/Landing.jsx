@@ -4,6 +4,7 @@ import useMediaQuery from "../hooks/useMediaQuery"
 import { motion } from "framer-motion";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import profile from '../assets/maki.png'
+import bg_profile from '../assets/butterfly.png'
 
 const Landing = ({setSelectedPage}) => {
     const aboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -22,7 +23,7 @@ const Landing = ({setSelectedPage}) => {
                     <img src={profile} 
                         className='hover:filter py-16 ml-28 hover:saturate-200 transition duration-500 z-10 w-3/5 absolute
                         max-w-[400px] md:max-w-[600px]' alt="profile" />
-                    <img src="./assets/butterfly.png" 
+                    <img src={bg_profile} 
                         className='hover:filter hover:saturate-200 transition duration-500 z-0 w-full
                         max-w-[400px] md:max-w-[600px]' alt="profile" />
                 </div>

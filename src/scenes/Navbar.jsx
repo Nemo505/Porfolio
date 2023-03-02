@@ -3,6 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery"
 import EmojiNatureIcon from '@mui/icons-material/EmojiNature';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import nav_profile from '../assets/maki.png'
 
 const Link = ({ page, selectedPage, setSelectedPage}) => {
     const lowerCasePage = page.toLowerCase();
@@ -63,7 +64,7 @@ const Navbar = ({isTopPage, selectedPage, setSelectedPage}) => {
                 <div className="fixed right-0 bottom-0 h-full bg-fuchsia-900 w-[300px]">
                     <div className="flex justify-end p-12">
                         <button onClick={() => setIsMenuToggled(!isMenuToggled)}> 
-                            <img src={"../../src/assets/maki.png"} alt="menu-icon" />
+                            <img src={nav_profile} alt="menu-icon" />
                         </button>
                     </div>
                     <div className="flex flex-col gap-10 ml-[22%] text-2xl text-red-400">

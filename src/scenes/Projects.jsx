@@ -2,6 +2,7 @@ import React from 'react'
 import LineGradient from '../components/LineGradient'
 import useMediaQuery from '../hooks/useMediaQuery'
 import {motion} from 'framer-motion'
+import bubble from '../assets/bubble.png'
 
 const Projects = ({}) => {
 
@@ -25,7 +26,7 @@ const Projects = ({}) => {
 
         <div className='md:flex gap-16 md:items-center'>
             <div className='basic-2/5 z-10 '>
-                <img src="../../src/assets/bubble.png" 
+                <img src={bubble} 
                     className='max-w-[300px] md:max-w-[300px] mt-32 md:mt-0 animate-bounce delay-700 duration-10' 
                     style={{opacity: '0.2'}} alt='' />
             </div>
