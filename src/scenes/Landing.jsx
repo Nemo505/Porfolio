@@ -3,6 +3,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery"
 import { motion } from "framer-motion";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import profile from '../assets/maki.png'
 
 const Landing = ({setSelectedPage}) => {
     const aboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -18,7 +19,7 @@ const Landing = ({setSelectedPage}) => {
                 // </div>
                 <div className='relative z-0 
                 '>
-                    <img src="./assets/maki.png" 
+                    <img src={profile} 
                         className='hover:filter py-16 ml-28 hover:saturate-200 transition duration-500 z-10 w-3/5 absolute
                         max-w-[400px] md:max-w-[600px]' alt="profile" />
                     <img src="./assets/butterfly.png" 
@@ -26,7 +27,7 @@ const Landing = ({setSelectedPage}) => {
                         max-w-[400px] md:max-w-[600px]' alt="profile" />
                 </div>
                 ): (
-                    <img src="./assets/maki.png" 
+                    <img src={profile} 
                     className='hover:filter hover:saturate-200 transition duration-500 z-10 w-full
                     max-w-[400px] md:max-w-[600px]' alt="profile" />
                 )
