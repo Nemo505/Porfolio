@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         title: "FoodMenu",
-        img: "../../../public/projectImg/food.jpg",
+        img: ".//projectImg/food.jpg",
         href: "https://github.com/Nemo505/Fast-food",
         status: "active",
         desc: ""
@@ -10,7 +10,7 @@ export const projects = [
     {
         id: 2,
         title: "Calculator",
-        img: "../../../public/projectImg/calculator.jpg",
+        img: "./projectImg/calculator.jpg",
         href: "https://github.com/Nemo505/Calculator",
         status: "active",
         desc: ""
@@ -18,7 +18,7 @@ export const projects = [
     {
         id: 3,
         title: "Music Player",
-        img: "../../../public/projectImg/music.jpg",
+        img: "./projectImg/music.jpg",
         href: "https://github.com/Nemo505/MusicPlayer",
         status: "active",
         desc: ""
@@ -26,7 +26,7 @@ export const projects = [
     {
         id: 4,
         title: "Admin Dashboard",
-        img: "../../../public/projectImg/admin.jpg",
+        img: "./projectImg/admin.jpg",
         href: "https://github.com/Nemo505/admin_react.git",
         status: "active",
         desc: ""
