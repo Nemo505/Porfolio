@@ -5,6 +5,7 @@ import EmojiNatureIcon from '@mui/icons-material/EmojiNature';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import nav_profile from '../assets/maki.png'
 
+
 const Link = ({ page, selectedPage, setSelectedPage}) => {
     const lowerCasePage = page.toLowerCase();
 
@@ -29,7 +30,7 @@ const Navbar = ({isTopPage, selectedPage, setSelectedPage}) => {
   return (
     <nav className={` ${navbarBackground} z-40 w-full fixed top-0 py-6`}>
         <div className={"flex items-center justify-between mx-auto w-5/6"}>
-            <h4 className="font-playfair text-3xl font-bold hover:text-fuchsia-300 transition duration-300">MAPLE <span><EmojiNatureIcon /></span></h4>
+            <h4 className="font-playfair text-3xl font-bold hover:text-fuchsia-300 transition duration-300 TiltPrism">MAPLE <span><EmojiNatureIcon /></span></h4>
             {aboveSmallScreens ? (
                 <div className="flex justify-between gap-16 font-mono">
                     <Link page="Home"
@@ -44,14 +45,6 @@ const Navbar = ({isTopPage, selectedPage, setSelectedPage}) => {
                         selectedPage={selectedPage}
                         setSelectedPage={setSelectedPage}
                     />
-                    {/* <Link page="Testimonials"
-                        selectedPage={selectedPage}
-                        setSelectedPage={setSelectedPage}
-                    />
-                    <Link page="Contact"
-                        selectedPage={selectedPage}
-                        setSelectedPage={setSelectedPage}
-                    /> */}
                 </div>
             ) : (
                 <button className="rounded-full bg-fuchsia-900"
@@ -61,7 +54,7 @@ const Navbar = ({isTopPage, selectedPage, setSelectedPage}) => {
                 </button>
             )}
             {!aboveSmallScreens && isMenuToggled && (
-                <div className="fixed right-0 bottom-0 h-full bg-fuchsia-900 w-[300px]">
+                <div className="fixed right-0 bottom-0 h-full w-[300px] TiltPrism" style={{background: "linear-gradient(to right, #151515, #480755, #766DC1)"}}>
                     <div className="flex justify-end p-12">
                         <button onClick={() => setIsMenuToggled(!isMenuToggled)}> 
                             <img src={nav_profile} alt="menu-icon" />
@@ -80,14 +73,7 @@ const Navbar = ({isTopPage, selectedPage, setSelectedPage}) => {
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
-                        {/* <Link page="Testimonials"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                        />
-                        <Link page="Contact"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                        /> */}
+                       
                     </div>
                 </div>
             )}

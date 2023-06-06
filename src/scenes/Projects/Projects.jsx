@@ -67,15 +67,17 @@ const [selectedId, setSelectedId] = useState(null)
                             ))}             
                         </div>
                     ):(
-                        <div>
+                        <div className="grid grid-cols-5 gap-3 grid-row-5 justify-center">
 
                             {projects.map((project) => (
-                                <div className="max-w-sm mt-8 p-6 border border-l-4 
-                                    border-l-violet-600 border-gray-600 
-                                    rounded-tr-3xl bg-zinc-900 bg-opacity-70
-                                    rounded-bl-3xl shadow" key={project.id}>
-                                    <ProjectInfo project={project}/>
-                                </div>
+                                <motion.div layoutId={project.id} onClick={() => setSelectedId(project.id)}>
+                                    <div className="max-w-sm mt-8 p-6 border border-l-4 
+                                        border-l-violet-600 border-gray-600 
+                                        rounded-tr-3xl bg-zinc-900 bg-opacity-70
+                                        rounded-bl-3xl shadow" key={project.id}>
+                                        <ProjectInfo project={project}/>
+                                    </div>
+                                </motion.div>
                             ))}
                            
                         </div>
@@ -100,14 +102,14 @@ const [selectedId, setSelectedId] = useState(null)
                                     <div className=" fixed z-40  
                                      -translate-x-[50%] -translate-y-[50%] g" 
                                      style={{background: "linear-gradient(to right, #151515, #480755, #766DC1)", 
-                                     top:"18%", left:"30%", width:"40%",height:"auto", borderRadius:"20px", padding:"10px"}}>
+                                     top:"15%", left:"20%", width:"60%",height:"auto", borderRadius:"20px", padding:"10px"}}>
                                         <button type='button' style={{float: "right"}} onClick={() => setSelectedId(null)}>
                                             <CancelIcon/>
                                         </button>
                                         <div>
                                             <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{project.title}</h5>
                                             <img src={project.img}
-                                                style={{opacity: '0.8', maxHeight:"400px", maxWidth:"400px", margin:"auto"}} alt='' />
+                                                style={{opacity: '0.8', maxHeight:"70%", maxWidth:"70%", margin:"auto", objectFit:"cover"}} alt='' />
                                             <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
                                                 {project.desc}
                                             </p>

@@ -14,12 +14,7 @@ const Landing = ({setSelectedPage}) => {
 
         <div className='md:order-2 flex justify-center basic-3/5 z-10 mt-16 md:mt-32'>
             {aboveMediumScreens ? (
-                // <div className='relative z-0 ml-20 before:absolute before:-top-20 before:-left-20
-                // before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full
-                // before:border-2 before:border-red-500 before:z-[-1]'>
-                // </div>
-                <div className='relative z-0 
-                '>
+                <div className='relative z-0'>
                     <img src={profile} 
                         className='hover:filter py-16 ml-28 hover:saturate-200 transition duration-500 z-10 w-3/5 absolute
                         max-w-[400px] md:max-w-[600px]' alt="profile" />
