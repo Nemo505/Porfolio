@@ -4,7 +4,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills"
-import Projects from "./scenes/Projects"
+import Projects from "./scenes/Projects/Projects"
 import Footer from "./scenes/Footer"
 import LineGradient from "./components/LineGradient"
 

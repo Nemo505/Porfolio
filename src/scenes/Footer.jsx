@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="bg-fuchsia-900 mx-auto">
+    <footer className="mx-auto" style={{background:"linear-gradient(#151515, #2f0755)"}}>
         <div className="mt-6 py-3">
             <div className="md:flex justify-center text-center md:justify-between md:ml-20 ">
                 <SocialMediaIcons/>
