@@ -5,12 +5,12 @@ export const projects = [
         img: "./../src/assets/food.jpg",
         href: "https://github.com/Nemo505/admin_react.git",
         status: "active",
-        desc: "re"
+        desc: ""
     },
     {
         id: 2,
         title: "Calculator",
-        img: "https://th.bing.com/th/id/R.db836436ef6a0586e458fdb0014b7454?rik=9OuYxMUYDF7HNQ&pid=ImgRaw&r=0",
+        img: "./../src/assets/calculator.jpg",
         href: "https://github.com/Nemo505/admin_react.git",
         status: "active",
         desc: ""
@@ -18,7 +18,7 @@ export const projects = [
     {
         id: 3,
         title: "Music Player",
-        img: "https://th.bing.com/th/id/R.db836436ef6a0586e458fdb0014b7454?rik=9OuYxMUYDF7HNQ&pid=ImgRaw&r=0",
+        img: "./../src/assets/music.jpg",
         href: "https://github.com/Nemo505/admin_react.git",
         status: "active",
         desc: ""
@@ -26,7 +26,7 @@ export const projects = [
     {
         id: 4,
         title: "Admin Dashboard",
-        img: "https://th.bing.com/th/id/R.db836436ef6a0586e458fdb0014b7454?rik=9OuYxMUYDF7HNQ&pid=ImgRaw&r=0",
+        img: "./../src/assets/admin.jpg",
         href: "https://github.com/Nemo505/admin_react.git",
         status: "active",
         desc: ""
