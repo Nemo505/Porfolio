@@ -5,6 +5,7 @@ import Cube from '../../cubes/Cube'
 import { projects } from "../../projectData";
 import ProjectInfo from './ProjectInfo';
 import CancelIcon from '@mui/icons-material/Cancel';
+import { Tooltip } from '@mui/material';
 
 const Projects = ({}) => {
 
@@ -45,9 +46,11 @@ const [selectedId, setSelectedId] = useState(null)
                     {aboveMediumScreens ? (
                         <div className="grid grid-cols-4 grid-row-5 gap-4">
                             {projects.map((project) => (
-                                <div className="row-span-3 col-span-2">
+                                <div className="row-span-3 col-span-2" key={project.id}>
+
                                 {project.status == "active" ? (
-                                    <div  key={project.id}> 
+                                    <div > 
+                                    <Tooltip title="Click for more!" placement="top" arrow>
                                         <motion.div layoutId={project.id} onClick={() => setSelectedId(project.id)}>
 
                                             <div className="max-w-sm p-6 border border-l-4
@@ -59,10 +62,12 @@ const [selectedId, setSelectedId] = useState(null)
 
                                             </div>
                                         </motion.div> 
+                                    </Tooltip>
                                     </div>
                                 ): (
-                                <div></div>
+                                    <div></div>
                                 )}
+
                                </div>
                             ))}             
                         </div>
@@ -70,14 +75,20 @@ const [selectedId, setSelectedId] = useState(null)
                         <div className="grid grid-cols-5 gap-3 grid-row-5 justify-center">
 
                             {projects.map((project) => (
-                                <motion.div layoutId={project.id} onClick={() => setSelectedId(project.id)}>
-                                    <div className="max-w-sm mt-8 p-6 border border-l-4 
-                                        border-l-violet-600 border-gray-600 
-                                        rounded-tr-3xl bg-zinc-900 bg-opacity-70
-                                        rounded-bl-3xl shadow" key={project.id}>
-                                        <ProjectInfo project={project}/>
-                                    </div>
-                                </motion.div>
+                                <div key={project.id} >
+                                   
+                                    <Tooltip title="Click for more!" placement="top" arrow>
+                                    <motion.div layoutId={project.id} onClick={() => setSelectedId(project.id)}>
+                                        <div className="max-w-sm mt-8 p-6 border border-l-4 
+                                            border-l-violet-600 border-gray-600 
+                                            rounded-tr-3xl bg-zinc-900 bg-opacity-70
+                                            rounded-bl-3xl shadow" >
+                                            <ProjectInfo project={project}/>
+                                        </div>
+                                    </motion.div>
+                                    </Tooltip>
+
+                                </div>
                             ))}
                            
                         </div>
@@ -92,7 +103,9 @@ const [selectedId, setSelectedId] = useState(null)
         <AnimatePresence> 
         {selectedId && (
             <motion.div layoutId={selectedId}>
+
                 {projects.map((project) => (
+                   
                    <div key={project.id}>
                      {selectedId == project.id ? 
                         (
@@ -100,12 +113,17 @@ const [selectedId, setSelectedId] = useState(null)
                                  <div className="fixed top-0 left-0 w-[100%] h-[100%]" 
                                     style={{background: "rgba(0, 0, 0, 0.6)"}}>
                                     <div className=" fixed z-40  
-                                     -translate-x-[50%] -translate-y-[50%] g" 
-                                     style={{background: "linear-gradient(to right, #151515, #480755, #766DC1)", 
-                                     top:"15%", left:"20%", width:"60%",height:"auto", borderRadius:"20px", padding:"10px"}}>
+                                        -translate-x-[50%] -translate-y-[50%] g" 
+                                        style={{background: "linear-gradient(to right, #151515, #480755, #766DC1)", 
+                                        top:"15%", left:"20%", 
+                                        width:"60%",height:"auto", 
+                                        borderRadius:"20px", padding:"10px"}}
+                                    >
+                                        
                                         <button type='button' style={{float: "right"}} onClick={() => setSelectedId(null)}>
                                             <CancelIcon/>
                                         </button>
+
                                         <div>
                                             <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{project.title}</h5>
                                             <img src={project.img}
