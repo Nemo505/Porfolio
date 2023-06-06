@@ -82,10 +82,10 @@ const [selectedId, setSelectedId] = useState(null)
         {selectedId && (
             <motion.div layoutId={selectedId}>
                 {projects.map((project) => (
-                   <div>
+                   <div key={project.id}>
                      {selectedId == project.id ? 
                         (
-                            <div key={project.id}>
+                            <div >
                                  <div className="fixed top-0 left-0 w-[100%] h-[100%]" 
                                     style={{background: "rgba(0, 0, 0, 0.6)"}}>
                                     <div className=" fixed z-40  
@@ -98,7 +98,7 @@ const [selectedId, setSelectedId] = useState(null)
                                         <div>
                                             <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{project.title}</h5>
                                             <img src={project.img}
-                                                style={{opacity: '0.2', maxHeight:"300px", maxWidth:"300px"}} alt='' />
+                                                style={{opacity: '0.6', maxHeight:"300px", maxWidth:"300px", margin:"auto"}} alt='' />
                                             <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
                                                 {project.desc}
                                             </p>

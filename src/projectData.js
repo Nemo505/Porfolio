@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         title: "FoodMenu",
-        img: "https://th.bing.com/th/id/R.db836436ef6a0586e458fdb0014b7454?rik=9OuYxMUYDF7HNQ&pid=ImgRaw&r=0",
+        img: "./../src/assets/food.jpg",
         href: "https://github.com/Nemo505/admin_react.git",
         status: "active",
         desc: "re"
